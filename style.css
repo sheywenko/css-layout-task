@@ -1,0 +1,121 @@
+@import url("https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+:root {
+  --bright-orange: hsl(31, 77%, 52%);
+  --dark-cyan: hsl(184, 100%, 22%);
+  --deep-cyan: hsl(179, 100%, 13%);
+  --white-light: hsla(0, 0%, 100%, 0.75);
+  --gray-light: hsl(0, 0%, 95%);
+  --Lexend-font: "Lexend Deca", sans-serif;
+  --big-shoulder-font: "Big Shoulders Display", cursive;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 15px;
+}
+nav {
+  background-color: var(--deep-cyan);
+  height: 50px;
+}
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+  list-style-type: none;
+}
+li a {
+  text-decoration: none;
+  font-size: 22px;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 50px;
+  transition: 0.4s;
+}
+li a:hover {
+  color: var(--bright-orange);
+}
+main {
+  width: 1440px;
+  max-width: 100%;
+}
+.flex--container {
+  padding: 90px 250px;
+  display: flex;
+  margin: auto;
+}
+.flex--box {
+  height: auto;
+  padding: 45px;
+}
+.sedans--box {
+  background-color: var(--bright-orange);
+  border-radius: 7px 0 0 7px;
+}
+.sedans--box .btn {
+  color: var(--bright-orange);
+}
+.suvs--box {
+  background-color: var(--dark-cyan);
+}
+.suvs--box .btn {
+  color: var(--dark-cyan);
+}
+.luxury--box {
+  background-color: var(--deep-cyan);
+  border-radius: 0 7px 7px 0;
+}
+.luxury--box .btn {
+  color: var(--deep-cyan);
+}
+.image--box {
+  padding-bottom: 30px;
+}
+.text--box h1 {
+  font-family: var(--big-shoulder-font);
+  text-transform: uppercase;
+  padding-bottom: 30px;
+  color: var(--gray-light);
+}
+.text--box p {
+  font-family: var(--Lexend-font);
+  padding-bottom: 90px;
+  color: var(--white-light);
+}
+.btn {
+  font-family: var(--Lexend-font);
+  text-decoration: none;
+  background-color: var(--gray-light);
+  padding: 10px 15px;
+  border-radius: 100px;
+  border: 1px solid var(--gray-light);
+  transition: all 0.4s;
+}
+
+.btn:hover {
+  background-color: transparent;
+  color: var(--gray-light);
+}
+@media (max-width: 375px) {
+  .flex--container {
+    flex-direction: column;
+    width: 100%;
+    padding: 60px 25px;
+  }
+  .sedans--box {
+    background-color: var(--bright-orange);
+    border-radius: 7px 7px 0 0;
+  }
+  .luxury--box {
+    background-color: var(--deep-cyan);
+    border-radius: 0 0 7px 7px;
+  }
+  .text--box p {
+    padding-bottom: 30px;
+  }
+}
