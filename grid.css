@@ -38,7 +38,7 @@ li a:hover {
     "a a b"
     "c d d"
     "c e e";
-  grid-template-columns: 300px 90px 240px;
+  grid-template-columns: 30% 30% 30%;
   grid-template-rows: 210px 120px 130px;
 }
 
